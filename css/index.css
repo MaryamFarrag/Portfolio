@@ -6,6 +6,123 @@ body{
      margin:0;
      font-family: 'Montserrat', sans-serif;
 }
+/*loadeing screen*/
+.box {
+    position: relative;
+    top: 40%;
+    left:42%;
+    width: 33.33vw;
+    height: 33.33vw;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 180px;
+    min-height: 180px;
+    display: inline-block;
+}
+.spinner{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    transform-origin:center;
+    width:120px;
+    height:120px;
+}
+.spinner  span{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:12px;
+}
+.type7{
+    width:20px;
+    height:20px;
+    animation:spinner7_1 1.4s infinite linear forwards;
+}    
+.type7 span{
+    color:transparent;
+}
+.type7 span:before,
+.type7 span:after{
+  content:' ';
+  position:absolute;
+  width:20px;
+  height:20px;
+  background-color:#fff;
+}
+.type7 span:before{
+    top:-20px;
+    left:-20px;
+    background-color: rgba(247, 222, 4);
+    animation:spinner7_2 1.4s infinite linear forwards;
+}
+.type7 span:after{
+    top:20px;
+    left:20px;
+    background-color: rgba(247, 222, 4);
+    animation:spinner7_3 1.4s infinite linear forwards;
+  }
+  @keyframes spinner7_1{
+    0%,
+    100%{
+      background-color:rgb(247, 222, 4);
+    }
+    50%{
+      background-color:rgba(247, 222, 4,.5);
+    }
+  }
+  @keyframes spinner7_2{
+    0%,
+    100%{
+      transform:translate(0, 0) rotateX(0) rotateY(0);
+    }
+    25%{
+      transform:translate(0, calc(100% + 20px)) rotateX(180deg) rotateY(0);
+    }
+    50%{
+      transform:translate(calc(100% + 20px), calc(100% + 20px)) rotateX(180deg) rotateY(180deg);
+    }
+    75%{
+      transform:translate(calc(100% + 20px), 0) rotateX(0deg) rotateY(180deg);
+    }
+  }
+  
+  @keyframes spinner7_3{
+    0%,
+    100%{
+      transform:translate(0, 0) rotateX(0) rotateY(0);
+    }
+    25%{
+      transform:translate(0, calc(-100% - 20px)) rotateX(-180deg) rotateY(0);
+    }
+    50%{
+      transform:translate(calc(-100% - 20px), calc(-100% - 20px)) rotateX(-180deg) rotateY(-180deg);
+    }
+    75%{
+      transform:translate(calc(-100% - 20px), 0) rotateX(0) rotateY(-180deg);
+    }
+  }
+  
+.loading{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(253, 78, 78);
+    z-index: 10000;
+}
+.cssload-my-name{
+    position: absolute;
+    top:40%;
+    width:100%;
+}
+.cssload-my-name p{
+    font-size: 50px;
+    color: rgb(247, 222, 4);
+    font-weight: 700;
+}
 #home{
     position: relative;
 }
@@ -88,7 +205,6 @@ nav a:hover{
 #about .my-info button:hover{
     background-color: rgb(253, 78, 78,.8);
     color:#fff;
-    border:none;
 }
 #about img{
     border-radius:10px;
