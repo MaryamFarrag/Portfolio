@@ -1,0 +1,120 @@
+/* ---- reset ---- */ 
+*{
+    transition: all 1s;
+}
+body{
+     margin:0;
+     font-family: 'Montserrat', sans-serif;
+}
+#home{
+    position: relative;
+}
+/* ---- particles.js container ---- */
+ #particles-js{
+     width: 100%;
+    background-color: #482855;    
+}
+nav{
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+.navbar-brand{
+    color:rgb(247, 222, 4)!important;
+    font-size:30px;
+    font-weight: 700;
+}
+nav .my-bg{
+    background-color: transparent;
+}
+nav a{
+    color:#f1f1f1;
+}
+nav a:hover{
+    color:rgb(247, 222, 4);
+}
+#home .info{
+    position: absolute;
+    color:#fff;
+    width:100%;
+    top:40%;
+}
+#home .info span{
+    color:rgb(247, 222, 4);
+    font-weight: 700;
+}
+#home .scroll-down{
+    width:100%;
+    bottom: 5%;
+    font-size:36px;
+    position: absolute;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 5s; 
+}
+#home .link{
+    color: rgb(253, 78, 78);
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 5s; 
+}
+#home .scroll-down i{
+    cursor: pointer;
+}
+@keyframes bounce {
+    0% {color: rgb(247, 222, 4);}
+    50% {color: rgb(253, 78, 78);
+        transform: translateY(20px);
+    }
+    100% {color: rgb(247, 222, 4);}
+  }
+/*start of the about section*/
+#about{
+    position: relative;
+}
+#about .my-info, #about .cv{
+    border: 1px solid rgba(253, 78, 78,.4);
+    border-radius: 10px;
+}
+#about .my-info h2{
+    color:rgb(43, 43, 43);
+}
+#about .my-info p{
+  color:rgb(61, 61, 61);
+}
+#about .my-info button{
+    border: 1px rgba(253,78,78,.8) solid;
+    background-color: #fff;
+    color:rgb(61, 61, 61); 
+}
+#about .my-info button:hover{
+    background-color: rgb(253, 78, 78,.8);
+    color:#fff;
+    border:none;
+}
+#about img{
+    border-radius:10px;
+}
+#about .cv{
+    background-color: rgba(253, 78, 78,.2);
+    position: absolute;
+    top:30%;
+}
+#about .cv button{
+    background-color: rgb(247, 222, 4);
+    border:rgb(247, 222, 4) solid 1px;
+}
+#about .cv button:hover{
+    background-color:rgb(253, 78, 78);  
+    border:rgb(253,78,78) solid 1px;
+}
+#about .cv button:hover a{
+    color:#f1f1f1;
+}
+#about .cv a{
+    color:rgb(70, 70, 70);
+    text-decoration: none;
+}
+#about .cv p{
+    color:rgb(117, 116, 116);
+    font-size:26px;
+}
+
