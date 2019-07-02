@@ -2,6 +2,11 @@ $("a").click(function(){
     var aHref = $(this).attr("href");
     $("body").animate({scrollTop:$(aHref).offset().top},1000)
 })
+$(document).ready(function(){
+    $(".cssload-my-name").css("opacity","0")
+    $(".loading").css("opacity", "0");
+    $(".loading").css("z-index","0");
+}) 
 
 let prevScroll = window.pageYOffset
 window.onscroll = function(){  
