@@ -214,10 +214,9 @@ nav a:hover{
 }
 #about .cv{
     background-color: rgba(253, 78, 78,.2);
-    position: absolute;
     top:30%;
 }
-#about .cv button{
+#about .cv button.btn{
     background-color: rgb(247, 222, 4);
     border:rgb(247, 222, 4) solid 1px;
 }
@@ -311,7 +310,7 @@ nav a:hover{
 .owl-carousel .owl-nav button.owl-next{
   position: absolute;
   color:rgb(247, 222, 4);
-  right:-30px;
+  right:-60px;
   top:50%;
   font-size:30px;
   padding:0 30px 0 30px!important;
@@ -321,10 +320,20 @@ nav a:hover{
 .owl-carousel .owl-nav button.owl-prev{
   position: absolute;
   color:rgb(247, 222, 4);
-  left:-100px;
+  left:-60px;
   top:50%;
   font-size:30px;
   padding:0 30px 0 30px!important;
   margin:10px 10px;
   border-radius: 40%;
+}
+@media only screen and (max-width:450px){
+  .spinner{
+    top:100%;
+    left:20%;
+}
+.navbar-brand{
+  font-size:20px;
+  font-weight: 700;
+}
 }
