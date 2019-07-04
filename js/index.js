@@ -20,13 +20,13 @@ window.onscroll = function(){
     currentScroll = window.pageYOffset
     if(prevScroll > currentScroll && $(document).scrollTop() < 50){
       $(".my-bg").css("background-color", "transparent");
-      $("nav a").css("color","#f1f1f1");
+      $("nav .nav-link").css("color","#f1f1f1");
       $("nav .toggle-right").css("color","#f1f1f1");
     }
     else if(prevScroll > currentScroll){
         $(".my-bg").css("top","0")
         $(".my-bg").css("background-color","white")
-        $("nav a").css("color","#242424")
+        $("nav .nav-link").css("color","#242424")
         $("nav .toggle-right").css("color","#242424")
     }
     else{

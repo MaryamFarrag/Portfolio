@@ -145,11 +145,11 @@ nav{
 nav .my-bg{
     background-color: transparent;
 }
-nav a{
+nav .nav-link{
     color:#f1f1f1;
 }
 nav a:hover{
-    color:rgb(247, 222, 4);
+    color:rgb(247, 222, 4)!important;
 }   
 #home .info{
     position: absolute;
@@ -275,6 +275,7 @@ nav a:hover{
 #portfolio .layer .info{
   background-color: #f1f1f1;
   padding:2px;
+  margin: 70px auto;
 }
 #portfolio .layer h2{
   color:rgb(70, 70, 70);
