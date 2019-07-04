@@ -13,20 +13,20 @@ window.onscroll = function(){
     currentScroll = window.pageYOffset
     if(prevScroll > currentScroll && $(document).scrollTop() < 50){
       $(".my-bg").css("background-color", "transparent");
-      $("nav a").css("color","#f1f1f1")
+      $("nav a").css("color","#f1f1f1");
+      $("nav .toggle-right").css("color","#f1f1f1");
     }
     else if(prevScroll > currentScroll){
         $(".my-bg").css("top","0")
         $(".my-bg").css("background-color","white")
         $("nav a").css("color","#242424")
+        $("nav .toggle-right").css("color","#242424")
     }
     else{
         $(".my-bg").css("top","-100px")
     }
     prevScroll = currentScroll
 }
-
-
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -60,3 +60,64 @@ $(document).ready(function(){
   "move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":706.5071747021702,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":false});var  update;
   /*end of particles*/
   new WOW().init();
+
+  let img = $("#portfolio img");
+  let title = $("#portfolio .layer h2")
+  let desc = $("#portfolio .layer p")
+  let link = $("#portfolio .layer a")
+  let tools = $("#portfolio .layer span")
+  img.click(function(){
+      let thisSrc = $(this).attr("src")
+      $("#portfolio .layer").css("display","block")
+      $("#portfolio .layer img").attr("src",thisSrc)
+      if($(this).attr("src") == "images/MiTalent.png"){
+          title.html("MiTalent")
+          desc.html("MiTalent is template for a website of a company that showcases its clients in a beautiful design.")
+          link.attr("href","https://maryamfarrag.github.io/miTalent/")
+          link.html("check page.")
+          tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery.")
+      }
+      else if($(this).attr("src") == "images/BookABook.png"){
+        title.html("BookABook")
+        desc.html("BookABook is design for a website that helps buying books online and showing the best books.")
+        link.attr("href","https://maryamfarrag.github.io/BookABook/")
+        link.html("check page.")
+        tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery.")
+    }
+    else if($(this).attr("src") == "images/BestScene.png"){
+        title.html("MasterScene")
+        desc.html("MasterScene is design for a website that makes users choose the best scene of each movie")
+        link.attr("href","https://www.behance.net/gallery/81046285/MasterScene")
+        link.html("check page.")
+        tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery.")
+    }
+    else if($(this).attr("src") == "images/planA/plana3.png"){
+        title.html("PlanA")
+        desc.html("PlanA is a website that suggests different places for different purposes.")
+        link.attr("href","https://www.behance.net/gallery/81045983/PlanA")
+        link.html("check page.")
+        tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery, PHP, Mysql, Angular7, AJAX.")
+    }
+    else if($(this).attr("src") == "images/Angora.jpg"){
+        title.html("Angora")
+        desc.html("Angora is a template of a company showing its staff and services.")
+        link.attr("href","https://maryamfarrag.github.io/Angora/")
+        link.html("check page.")
+        tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery.")
+    }
+    else if($(this).attr("src") == "images/admin panel.PNG"){
+        title.html("Admin Panel")
+        desc.html("a simple system that shows the clinets with their entry dates, and alarms the admins when the expiration dates are 5 or less days away.")
+        link.attr("href","https://www.behance.net/gallery/82181325/admin-panel")
+        link.html("check page.")
+        tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery, PHP, MySql, AJAX.")
+    }
+})
+$("#portfolio .layer i").click(function(){
+    $("#portfolio .layer").css("display","none")
+})
+$(document).keyup(function(e){
+    if(e.key == "Escape"){
+        $("#portfolio .layer").css("display","none")
+    }
+})

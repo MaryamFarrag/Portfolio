@@ -6,6 +6,9 @@ body{
      margin:0;
      font-family: 'Montserrat', sans-serif;
 }
+.h-60{
+  height:60%;
+}
 /*loadeing screen*/
 .box {
     position: relative;
@@ -147,7 +150,7 @@ nav a{
 }
 nav a:hover{
     color:rgb(247, 222, 4);
-}
+}   
 #home .info{
     position: absolute;
     color:#fff;
@@ -233,4 +236,95 @@ nav a:hover{
     color:rgb(117, 116, 116);
     font-size:26px;
 }
-
+#portfolio{
+    background-color: #f1f1f1;
+    position: relative;
+}
+#portfolio h1{
+  color:rgb(61, 61, 61);
+}
+#portfolio h1:after{
+  content: ' ';
+  position: absolute;
+  background-color: rgb(253, 78, 78);
+  width:30px;
+  height: 30px;
+  margin-left:15px;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin-top:10px;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(180deg);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+}
+#portfolio .layer{
+  position: fixed;
+  background-color: rgba(0,0,0,.5);
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+  z-index: 1000;
+  display: none;
+}
+#portfolio .layer .info{
+  background-color: #f1f1f1;
+  padding:2px;
+}
+#portfolio .layer h2{
+  color:rgb(70, 70, 70);
+}
+#portfolio .layer p, #portfolio .layer span{
+  color:rgb(117, 116, 116);
+}
+#portfolio .layer a{
+  color:rgb(247, 222, 4);
+}
+#portfolio .layer i{
+  font-size:30px;
+  color:rgb(247, 222, 4);
+  position: absolute;
+  top:30px;
+  right:50px;
+  cursor: pointer;
+}
+#portfolio .project{
+  border: 1px solid rgba(253, 78, 78,.4);
+  cursor: pointer;
+}
+#portfolio .project .img{
+  overflow: hidden;
+}
+#portfolio .project:hover img{
+  transform: scale(1.2);
+}
+#portfolio  .project header{
+  background-color: rgb(243, 197, 197);
+  color:rgb(70, 70, 70);
+}
+.owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  color:rgb(247, 222, 4);
+  right:-30px;
+  top:50%;
+  font-size:30px;
+  padding:0 30px 0 30px!important;
+  margin:10px 10px;
+  border-radius: 40%;
+}
+.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  color:rgb(247, 222, 4);
+  left:-100px;
+  top:50%;
+  font-size:30px;
+  padding:0 30px 0 30px!important;
+  margin:10px 10px;
+  border-radius: 40%;
+}
