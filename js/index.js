@@ -3,9 +3,18 @@ $("a").click(function(){
     $("body").animate({scrollTop:$(aHref).offset().top},1000)
 })
 $(document).ready(function(){
-    $(".cssload-my-name").css("opacity","0")
-    $(".loading").css("opacity", "0");
-    $(".loading").css("z-index","0");
+    setTimeout(function(){
+        $(".cssload-my-name").css("opacity","0")
+    },1000)
+    setTimeout(function(){
+        $(".box").css("opacity", "0");
+    },2000)
+    setTimeout(function(){
+        $(".loading").css("opacity", "0");
+        $(".loading").css("z-index","0");
+    },2500)
+   /* $(".loading").css("opacity", "0");
+    $(".loading").css("z-index","0"); */
 }) 
 
 let prevScroll = window.pageYOffset
