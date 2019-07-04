@@ -13,8 +13,6 @@ $(document).ready(function(){
         $(".loading").css("opacity", "0");
         $(".loading").css("z-index","0");
     },2500)
-   /* $(".loading").css("opacity", "0");
-    $(".loading").css("z-index","0"); */
 }) 
 
 let prevScroll = window.pageYOffset
