@@ -8,11 +8,11 @@ $(document).ready(function(){
     },1000)
     setTimeout(function(){
         $(".box").css("opacity", "0");
-    },2000)
+    },1500)
     setTimeout(function(){
         $(".loading").css("opacity", "0");
         $(".loading").css("z-index","0");
-    },2500)
+    },2000)
 }) 
 
 let prevScroll = window.pageYOffset
