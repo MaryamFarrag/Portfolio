@@ -3,8 +3,11 @@
     transition: all 1s;
 }
 body{
-     margin:0;
-     font-family: 'Montserrat', sans-serif;
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+  width:100%;
+  overflow-x: hidden;
+
 }
 .h-60{
   height:60%;
@@ -109,6 +112,7 @@ body{
   
 .loading{
     position: fixed;
+    width:100%;
     top:0;
     bottom: 0;
     left: 0;
@@ -275,7 +279,7 @@ nav a:hover{
 #portfolio .layer .info{
   background-color: #f1f1f1;
   padding:2px;
-  margin: 50px auto;
+  margin: 20px auto;
   position: relative;
 }
 #portfolio .layer h2{
@@ -311,7 +315,7 @@ nav a:hover{
 }
 .owl-carousel .owl-nav button.owl-next{
   position: absolute;
-  color:rgb(247, 222, 4,.5);
+  color:rgb(247, 222, 4);
   right:-70px;
   top:45%;
   font-size:80px;
@@ -321,7 +325,7 @@ nav a:hover{
 }
 .owl-carousel .owl-nav button.owl-prev{
   position: absolute;
-  color:rgb(247, 222, 4,.5);
+  color:rgb(247, 222, 4);
   left:-70px;
   top:45%;
   font-size:80px;
@@ -349,10 +353,6 @@ nav a:hover{
   color:rgb(247, 222, 4);
   font-style: normal;
 }
-#services .service header i.uiux{
-  font-weight:700;
-  font-size:45px;
-}
 @media only screen and (max-width:450px){
   .spinner{
     top:100%;
@@ -361,5 +361,22 @@ nav a:hover{
 .navbar-brand{
   font-size:20px;
   font-weight: 700;
+}
+.cssload-my-name p{
+  font-size: 30px;
+  color: rgb(247, 222, 4);
+  font-weight: 700;
+}
+.box {
+  position: relative;
+  top: 25%;
+  left:42%;
+  width: 33.33vw;
+  height: 33.33vw;
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 180px;
+  min-height: 180px;
+  display: inline-block;
 }
 }
