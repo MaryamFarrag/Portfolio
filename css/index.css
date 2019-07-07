@@ -209,9 +209,16 @@ nav a:hover{
     background-color: #fff;
     color:rgb(61, 61, 61); 
 }
+#about .my-info a{
+  color:rgb(61, 61, 61);
+  text-decoration: none;
+}
 #about .my-info button:hover{
     background-color: rgb(253, 78, 78,.8);
     color:#fff;
+}
+#about .my-info button:hover a{
+  color:#fff;
 }
 #about img{
     border-radius:10px;
@@ -352,6 +359,76 @@ nav a:hover{
   font-size:50px;
   color:rgb(247, 222, 4);
   font-style: normal;
+}
+#contact h1{
+  color:rgb(70, 70, 70);
+  margin-bottom: 20px;
+}
+#contact .my-info{
+  background-color:rgba(253, 78, 78,.4);
+  height:100%;
+  border-radius: 10px;
+}
+#contact .my-btn{
+  border:rgb(247, 222, 4) 1px solid;
+  background-color: rgb(247, 222, 4);
+  color:rgb(70, 70, 70);
+}
+#contact .my-btn:hover{
+  border:rgb(253, 78, 78) 1px solid;
+  background-color: rgb(253, 78, 78);
+  color:rgb(216, 214, 214);
+}
+footer{
+  background-color: #482855;
+}
+footer .col-md-4{
+  border-right:1px solid rgba(255, 255, 255, 0.3);
+}
+footer header{
+  color:#fff;
+  margin:0;
+}
+footer .slogan .h{
+  font-size: 40px;
+  margin:0;
+}
+footer .about a{
+  color:rgb(240,240,240);
+  display: block;
+  text-decoration: none;
+}
+footer .contact-us{
+  color:#fff;
+}
+footer .contact-us .h{
+  font-size:22px;
+}
+footer .contact-us .icons p{
+  font-size:14px;
+  color:rgb(240,240,240);
+}
+footer .contact-us .icons a{
+  color:rgb(240, 240, 240);
+}
+footer .end{
+  background-color: #390f49;
+}
+footer .end p{
+  font-size:12px;
+  color: rgb(190, 190, 190);
+}
+footer .end span{
+  color:#fff;
+  font-style: normal;
+}
+footer .footer-link{
+  color:rgb(190, 190, 190);
+  font-size:14px;
+}
+footer .row{
+  padding-right:0!important;
+  margin:0!important;
 }
 @media only screen and (max-width:450px){
   .spinner{

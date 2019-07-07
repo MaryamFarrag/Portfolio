@@ -11,7 +11,7 @@ $(document).ready(function(){
     },1500)
     setTimeout(function(){
         $(".loading").css("opacity", "0");
-        $(".loading").css("z-index","0");
+        $(".loading").css("z-index","-100000");
     },2000)
 }) 
 
