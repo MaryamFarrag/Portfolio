@@ -77,6 +77,7 @@ $(document).ready(function(){
       let thisSrc = $(this).attr("src")
       $("#portfolio .layer").css("display","block")
       $("#portfolio .layer img").attr("src",thisSrc)
+      console.log($(this).attr("src"))
       if($(this).attr("src") == "images/MiTalent.png"){
           title.html("MiTalent")
           desc.html("MiTalent is template for a website of a company that showcases its clients in a beautiful design.")
@@ -112,7 +113,7 @@ $(document).ready(function(){
         link.html("check page.")
         tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery.")
     }
-    else if($(this).attr("src") == "images/admin panel.PNG"){
+    else if($(this).attr("src") == "images/admin panel.png"){
         title.html("Admin Panel")
         desc.html("a simple system that shows the clinets with their entry dates, and alarms the admins when the expiration dates are 5 or less days away.")
         link.attr("href","https://www.behance.net/gallery/82181325/admin-panel")
