@@ -120,6 +120,13 @@ $(document).ready(function(){
         link.html("check page.")
         tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery, PHP, MySql, AJAX.")
     }
+    else if($(this).attr("src") == "images/API2.png"){
+        title.html("API-Viewer")
+        desc.html("a simple Project that takes the API URL the user enters and sorts it in an organized way in the web page.")
+        link.attr("href","https://maryamfarrag.github.io/API-Viewer/")
+        link.html("check page.")
+        tools.html("tools:HTML5, CSS3, Bootstrap, JavaScript, JQuery, JSON.")
+    }
 })
 $("#portfolio .layer i").click(function(){
     $("#portfolio .layer").css("display","none")
